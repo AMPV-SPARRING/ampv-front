@@ -9,7 +9,7 @@ tags:
 # Vite + React
 This example utilises vite for static site generation
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/-TK8rB?referralCode=OH27A5)
+[![Deploy on Railway](https://railway.app/button.svg)](https://dev-nasn.up.railway.app)
 
 ## ✨ Features
 
