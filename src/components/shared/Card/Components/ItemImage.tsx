@@ -5,9 +5,16 @@ import { ItemContext } from '../Card';
 import noImage from '../../../../assets/images/noImage.jpg';
 import { StyledCardImage } from '../StyledComponents';
 
-export const ItemImage: FC<{ img?: string; alt?: string }> = ({
+interface ItemImageProps {
+	alt?: string;
+	className?: string;
+	img?: string;
+}
+
+export const ItemImage: FC<ItemImageProps> = ({
 	img = '',
-	alt = 'No image available'
+	alt = 'No image available',
+	className
 }) => {
 	const { item } = useContext(ItemContext);
 	let imgToShow: string;
@@ -20,5 +27,5 @@ export const ItemImage: FC<{ img?: string; alt?: string }> = ({
 		imgToShow = noImage;
 	}
 
-	return <StyledCardImage src={imgToShow} alt={alt} />;
+	return <StyledCardImage src={imgToShow} alt={alt} className={className} />;
 };

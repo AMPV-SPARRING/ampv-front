@@ -2,59 +2,8 @@ html,
 body {
 	height: 100%;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
-	background-color: #282c34;
-	color: white;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-.productDescription {
-	margin: 10px;
-}
-
-.buttonsContainer {
-	margin: 10px;
-	display: flex;
-	flex-direction: row;
-}
-
-.buttonMinus {
-	cursor: pointer;
-	background-color: transparent;
-	border: 1px solid black;
-	border-radius: 5px 0px 0px 5px;
-	font-size: 20px;
-	width: 30px;
-}
-
-.buttonMinus:hover {
-	background-color: rgba(0, 0, 0, 0.1);
-}
-
-.countLabel {
-	border-bottom: 1px solid black;
-	border-top: 1px solid black;
-	font-size: 16px;
-	height: 25px;
-	padding-top: 5px;
-	text-align: center;
-	width: 30px;
-}
-
-.buttonAdd {
-	cursor: pointer;
-	background-color: transparent;
-	border: 1px solid black;
-	border-radius: 0px 5px 5px 0px;
-	font-size: 20px;
-	width: 30px;
-}
-
-.buttonAdd:hover {
-	background-color: rgba(0, 0, 0, 0.1);
 }
 
 code {
@@ -65,18 +14,4 @@ code {
 nav li {
 	list-style: none;
 	margin-bottom: 10px;
-}
-
-.nav-logo {
-	width: 30px;
-}
-
-.main-content {
-	padding: 0 1rem;
-}
-
-@media screen and (min-width: 360px) {
-}
-
-@media screen and (min-width: 768px) {
 }

@@ -9,7 +9,7 @@ import {
 } from '../../shared/Card/Components';
 
 const StyledHeader = styled.div`
-	color: ${({ theme }) => theme.color.white};
+	color: ${({ theme }) => theme.color.font};
 `;
 
 const StyledFlexContainer = styled.div`
@@ -24,7 +24,9 @@ const MOCK_ITEMS = [
 		title: 'Card 1',
 		description: 'Lorem ipsum dolor sit amet',
 		img: '../src/assets/images/-sVJXBJo.jpeg',
-		alt: 'Fruit boxes stage image'
+		alt: 'Fruit boxes stage image',
+		highlight: true,
+		framed: true
 	},
 	{
 		id: '2',
@@ -40,22 +42,31 @@ export const Home = () => {
 				<hr />
 			</StyledHeader>
 			<StyledFlexContainer>
-				{MOCK_ITEMS.map(item => (
-					<Card key={item.id} item={item}>
-						<ItemImage />
-						<ItemTitle />
-						<ItemDescription />
-						<ItemButtons />
-					</Card>
-				))}
-				{MOCK_ITEMS.map(item => (
-					<Card key={item.id} item={item}>
-						<Card.Image />
-						<Card.Title />
-						<Card.Description description={'Compound'} />
-						<Card.Buttons />
-					</Card>
-				))}
+				{MOCK_ITEMS.map(item => {
+					const highLight = item.highlight ? 'highlight' : '';
+					const framed = item.framed ? 'framed' : '';
+					return (
+						<Card key={item.id} item={item} className={highLight}>
+							<ItemImage className={framed} />
+							<ItemTitle />
+							<ItemDescription />
+							<ItemButtons />
+						</Card>
+					);
+				})}
+
+				{MOCK_ITEMS.map(item => {
+					const highLight = item.highlight ? 'highlight' : '';
+					const framed = item.framed ? 'framed' : '';
+					return (
+						<Card key={item.id} item={item} className={highLight}>
+							<Card.Image className={framed} />
+							<Card.Title />
+							<Card.Description description={'Compound'} />
+							<Card.Buttons />
+						</Card>
+					);
+				})}
 			</StyledFlexContainer>
 		</>
 	);

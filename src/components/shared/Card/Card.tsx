@@ -2,8 +2,8 @@ import React, { createContext } from 'react';
 import { useItem } from '../../../hooks/useItem';
 import {
 	ItemContextProps,
-	ItemCardProps,
-} from '../../../interfaces/ItemInterfaces';
+	ItemCardHOCProps
+} from '../../../interfaces';
 import { StyledCardContainer } from './StyledComponents';
 import {
 	ItemImage,
@@ -15,12 +15,14 @@ import {
 export const ItemContext = createContext({} as ItemContextProps);
 export const ItemProvider = ItemContext.Provider;
 
-const CardHOC = ({ children, item }: ItemCardProps) => {
+const CardHOC = ({ children, item, className }: ItemCardHOCProps) => {
 	const { counter, increaseBy } = useItem();
 
 	return (
 		<ItemProvider value={{ increaseBy, counter, item }}>
-			<StyledCardContainer>{children}</StyledCardContainer>
+			<StyledCardContainer className={className}>
+				{children}
+			</StyledCardContainer>
 		</ItemProvider>
 	);
 };

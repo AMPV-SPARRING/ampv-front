@@ -4,14 +4,17 @@ import type { FC } from 'react';
 import { ItemContext } from '../Card';
 import { StyledCardItemTitle } from '../StyledComponents';
 
-export const ItemTitle: FC<{ title?: string }> = ({
-	title
-}: {
+export interface ItemTitleProps {
 	title?: string;
-}) => {
+	className?: string;
+}
+
+export const ItemTitle: FC<ItemTitleProps> = ({ title, className }) => {
 	const { item } = useContext(ItemContext);
 
 	return (
-		<StyledCardItemTitle>{title ? title : item?.title}</StyledCardItemTitle>
+		<StyledCardItemTitle className={className}>
+			{title ? title : item?.title}
+		</StyledCardItemTitle>
 	);
 };

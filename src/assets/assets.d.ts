@@ -1,5 +1,5 @@
 declare module '*.jpg' {
-	const value: string;
+	const LoadingSpinner string;
 	export default value;
 }
 

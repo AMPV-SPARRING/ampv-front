@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 
+interface StyledCardCounterButtonProps {
+	onClick?: () => void;
+}
 
-export const StyledCardCounterButton = styled.button`
+export const StyledCardCounterButton = styled.button.attrs(
+	(props: StyledCardCounterButtonProps) => ({
+		onClick: props.onClick
+	})
+)`
 	cursor: pointer;
+	color: ${({ theme }) => theme.color.highlightFont};
 	background-color: transparent;
 	border: 1px solid black;
 	width: 30px;

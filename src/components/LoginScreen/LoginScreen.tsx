@@ -20,10 +20,9 @@ const StyledLoginScreenContainer = styled.div`
 `;
 
 const StyledFormContainer = styled.div`
-	z-index: 10000;
 	max-height: 80vh;
 	min-width: 220px;
-	background-color: ${({ theme }) => theme.color.white};
+	background-color: ${({ theme }) => theme.color.bg};
 	border-radius: ${({ theme }) => theme.spacing.space2};
 	box-shadow: ${({ theme }) => theme.shadow.file};
 	display: flex;

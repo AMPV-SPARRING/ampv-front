@@ -3,7 +3,11 @@ import type { FC } from 'react';
 import { ItemContext } from '../Card';
 import { StyledCardSpan } from '../StyledComponents';
 
-export const ItemDescription: FC<{ description?: string }> = ({
+export interface ItemDescriptionProps {
+	description?: string;
+}
+
+export const ItemDescription: FC<ItemDescriptionProps> = ({
 	description = ''
 }) => {
 	const { item } = useContext(ItemContext);

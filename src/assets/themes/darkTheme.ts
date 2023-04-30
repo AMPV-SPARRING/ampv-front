@@ -1,10 +1,16 @@
 import { DefaultTheme } from 'styled-components';
-
+import { media, spacing, fontSize, width, baseColor } from './commonTheme';
 export const color = {
+	...baseColor,
 	bg: '#282c34',
+	bg2: '#1A1A1A',
 	white: '#FFFFFF',
-	black: '#000000',
+	black: '#1A1A1A',
 	error: '#cc0c39',
+	highlight: '#1C3D56',
+
+	font: '#cecece',
+	highlightFont: '#FFFFFF',
 
 	blackAlpha: 'rgba(0, 0, 0, 0.5)',
 
@@ -65,52 +71,12 @@ export const color = {
 	purple500: '#48184d'
 };
 
-export const media = {
-	atXSmall: '@media(max-width: 320px)',
-	atSmall: '@media(min-width: 450px)',
-	atMedium: '@media(min-width: 768px)',
-	atLarge: '@media(min-width: 992px)',
-	atDesktop: '@media(min-width: 1024px)',
-	atXLarge: '@media(min-width: 1200px)',
-	atH600: '@media(min-height: 600px)'
-};
-
-export const spacing = {
-	halfSpace: '2px',
-	space: '4px',
-	space2: '8px',
-	space3: '12px',
-	space4: '16px',
-	space5: '20px',
-	space6: '24px',
-	space7: '28px',
-	space8: '32px',
-	space9: '36px',
-	space10: '40px',
-	space11: '44px',
-	space12: '48px',
-	space14: '56px',
-	space16: '64px',
-	space18: '72px',
-	space20: '80px'
-};
-
-export const width = {
-	card: '250px'
-};
-
-export const fontSize = {
-	xs: '8px',
-	s: '16px',
-	m: '24px',
-	l: '32px',
-	xl: '48px',
-	xxl: '64px'
-};
 /* 	box-shadow: 0 2px 4px ${({ theme }) => theme.color.bone100}, inset 2px 2px 10px ${({ theme }) => theme.color.black}; */
 export const shadow = {
 	file: `0 2px 4px ${color.bone100}, inset -2px 2px 10px ${color.black}`,
-	file3D: `0 2px 4px ${color.bone100}, inset 2px 3px 30px ${color.blackAlpha},  20px 45px 30px ${color.blackAlpha}`,
+	file3D: `0 2px 4px ${color.black}, inset 2px 3px 30px ${color.blackAlpha},  0px 45px 60px ${color.blackAlpha}`,
+	card: `0 2px 4px ${color.blackAlpha}`,
+	cardHover: `0 3px 8px ${color.blackAlpha}, 0 0 10px ${color.bone}`,
 	button: `0 2px 10px 2px ${color.blackAlpha}`
 };
 const theme: DefaultTheme = {

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const StyledCardButtonsContainer = styled.div`
 	margin: ${({ theme }) => theme.spacing.space2};
 	display: flex;
@@ -9,11 +8,13 @@ export const StyledCardButtonsContainer = styled.div`
 	button:first-child {
 		border-top-left-radius: ${({ theme }) => theme.spacing.space2};
 		border-bottom-left-radius: ${({ theme }) => theme.spacing.space2};
-		box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+		border: 1px solid ${({ theme }) => theme.color.font};
+		box-shadow: 0px 1px 3px 0px ${({ theme }) => theme.color.font};
 	}
 	button:last-child {
 		border-top-right-radius: ${({ theme }) => theme.spacing.space2};
 		border-bottom-right-radius: ${({ theme }) => theme.spacing.space2};
-		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+		border: 1px solid ${({ theme }) => theme.color.font};
+		box-shadow: 0px 1px 3px 0px ${({ theme }) => theme.color.font};
 	}
 `;
