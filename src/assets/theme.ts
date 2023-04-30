@@ -91,7 +91,12 @@ export const spacing = {
 	space12: '48px',
 	space14: '56px',
 	space16: '64px',
-	space18: '72px'
+	space18: '72px',
+	space20: '80px'
+};
+
+export const width = {
+	card: '250px'
 };
 
 export const fontSize = {
@@ -113,7 +118,8 @@ const theme: DefaultTheme = {
 	media,
 	spacing,
 	fontSize,
-	shadow
+	shadow,
+	width
 };
 
 export default theme;
