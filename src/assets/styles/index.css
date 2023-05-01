@@ -1,0 +1,184 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	background-color: #282c34;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.red {
+	color: #cc0c39;
+}
+.red50 {
+	color: #c20b35;
+}
+.red100 {
+	color: #af0b31;
+}
+.red200 {
+	color: #9c0b2d;
+}
+.red300 {
+	color: #7d0924;
+}
+.red400 {
+	color: #65091f;
+}
+.red500 {
+	color: #460715;
+}
+.blue {
+	color: #1693a7;
+}
+.blue50 {
+	color: #0f7c8f;
+}
+.blue100 {
+	color: #0d6d7f;
+}
+.blue200 {
+	color: #0b5e6f;
+}
+.blue300 {
+	color: #094e5f;
+}
+.blue400 {
+	color: #07404f;
+}
+.blue500 {
+	color: #053340;
+}
+.yellow {
+	color: #c8cf02;
+}
+.yellow50 {
+	color: #b3ba02;
+}
+.yellow100 {
+	color: #9fa602;
+}
+.yellow200 {
+	color: #8b9202;
+}
+.yellow300 {
+	color: #777d02;
+}
+.yellow400 {
+	color: #636802;
+}
+.yellow500 {
+	color: #4f5502;
+}
+.green {
+	color: #0f9d58;
+}
+.green50 {
+	color: #0d8c4f;
+}
+.green100 {
+	color: #0b7b46;
+}
+.green200 {
+	color: #0a6a3d;
+}
+.green300 {
+	color: #085934;
+}
+.green400 {
+	color: #06482b;
+}
+.green500 {
+	color: #043722;
+}
+.orange {
+	color: #e6781e;
+}
+.orange50 {
+	color: #d66f1b;
+}
+.orange100 {
+	color: #c66618;
+}
+.orange200 {
+	color: #b55d15;
+}
+.orange300 {
+	color: #a55412;
+}
+.orange400 {
+	color: #944b0f;
+}
+.orange500 {
+	color: #84420c;
+}
+.bone {
+	color: #f8fcc1;
+}
+.bone50 {
+	color: #f7f9b0;
+}
+.bone100 {
+	color: #f6f8a0;
+}
+.bone200 {
+	color: #f5f790;
+}
+.bone300 {
+	color: #f4f680;
+}
+.bone400 {
+	color: #f3f570;
+}
+.bone500 {
+	color: #f2f460;
+}
+.purple {
+	color: #9c27b0;
+}
+.purple50 {
+	color: #8e249f;
+}
+.purple100 {
+	color: #80228f;
+}
+.purple200 {
+	color: #721f7e;
+}
+.purple300 {
+	color: #641d6e;
+}
+.purple400 {
+	color: #561a5d;
+}
+.purple500 {
+	color: #48184d;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+nav li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.nav-logo {
+	width: 30px;
+}
+
+.main-content {
+	padding: 0 1rem;
+}
+
+@media screen and (min-width: 360px) {
+}
+
+@media screen and (min-width: 768px) {
+}
